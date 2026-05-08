@@ -1,0 +1,67 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.OBJ
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+*.DLL
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.[Ll][Ii][Bb]
+
+# Executables
+*.exe
+*.EXE
+*.out
+*.app
+ProjetAvion_linux
+
+# Debug files
+*.pdb
+*.PDB
+*.ilk
+*.exp
+
+# Build directories and temporary files
+Temp/
+[Bb]in/*.exe
+[Bb]in/*.EXE
+[Bb]in/*.pdb
+[Bb]in/*.PDB
+[Bb]in/*.ilk
+
+# Visual Studio files
+.vs/
+Projet/.vs/
+Projet/x64/
+Projet/ProjetAvion/x64/
+Projet/ProjetAvion/Debug/
+*.vcxproj.user
+*.suo
+*.user
+*.sln.docstates
+
+# Build logs
+*.log
+*.tlog
+*.recipe
+
+# OS specific files
+.DS_Store
+Thumbs.db
