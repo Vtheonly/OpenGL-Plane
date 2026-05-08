@@ -1,0 +1,77 @@
+﻿cl : ligne de commande  warning D9035: l'option 'Gm' est déconseillée et sera supprimée dans une version ultérieure
+  TD-PlacageTexture.cpp
+  PngFile.cpp
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\PngFile.cpp(56,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\PngFile.cpp(182,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ImageUtils.cpp
+  Image.cpp
+  Espace3UC.cpp
+  ChargePngFile.cpp
+  Génération de code en cours...
+cl : ligne de commande  warning D9035: l'option 'Gm' est déconseillée et sera supprimée dans une version ultérieure
+  zutil.c
+  uncompr.c
+  trees.c
+  pngwutil.c
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngwutil.c(180,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngwutil.c(1211,10): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngwutil.c(1591,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngwutil.c(1592,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pngwtran.c
+  pngwrite.c
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngwrite.c(422,11): warning C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngwrite.c(518,11): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngwrite.c(522,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngwrite.c(587,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngwrite.c(591,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pngwio.c
+  pngtrans.c
+  pngset.c
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngset.c(691,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngset.c(977,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngset.c(1026,9): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pngrutil.c
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngrutil.c(282,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngrutil.c(285,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngrutil.c(288,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngrutil.c(321,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngrutil.c(2184,8): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pngrtran.c
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngrtran.c(1225,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pngrio.c
+  pngread.c
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngread.c(120,11): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngread.c(124,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngread.c(199,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngread.c(203,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pngpread.c
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngpread.c(1494,8): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pngmem.c
+  pngget.c
+  pngerror.c
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\pngerror.c(149,7): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  png.c
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\png.c(672,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  inftrees.c
+  inflate.c
+  Génération de code en cours...
+  Compilation en cours...
+  inffast.c
+  infback.c
+  gzio.c
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\gzio.c(128,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\gzio.c(178,24): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\gzio.c(219,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\gzio.c(602,11): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\gzio.c(955,38): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\gzio.c(962,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\gzio.c(963,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Projet\Exemple\ChargementImagePNG\Src\PNG\Png\gzio.c(964,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  deflate.c
+  crc32.c
+  compress.c
+  adler32.c
+  Génération de code en cours...
+ChargePngFile.obj : warning LNK4075: ' /EDITANDCONTINUE' ignoré à cause de la spécification '/SAFESEH'
+  Exemple.vcxproj -> C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\IG-2025-2026\Temp\Debug\Exemple\Exemple.exe
+          1 fichier(s) copié(s).

@@ -1,0 +1,29 @@
+﻿  Camera.cpp
+  Scene.cpp
+  TextureLoader.cpp
+  Obstacle.cpp
+  Player.cpp
+  Main.cpp
+  CH3D.cpp
+  Dir3D.cpp
+  Pos3D.cpp
+  Génération de code en cours...
+Obstacle.obj : error LNK2019: symbole externe non résolu __imp_glutWireTorus référencé dans la fonction "public: void __cdecl Obstacle::draw(void)" (?draw@Obstacle@@QEAAXXZ)
+Player.obj : error LNK2019: symbole externe non résolu __imp_glutSolidCube référencé dans la fonction "public: void __cdecl Player::draw(void)" (?draw@Player@@QEAAXXZ)
+Main.obj : error LNK2019: symbole externe non résolu __imp___glutInitWithExit référencé dans la fonction glutInit_ATEXIT_HACK
+Main.obj : error LNK2019: symbole externe non résolu __imp_glutInitDisplayMode référencé dans la fonction main
+Main.obj : error LNK2019: symbole externe non résolu __imp_glutInitWindowSize référencé dans la fonction main
+Main.obj : error LNK2019: symbole externe non résolu __imp_glutMainLoop référencé dans la fonction main
+Main.obj : error LNK2019: symbole externe non résolu __imp___glutCreateWindowWithExit référencé dans la fonction glutCreateWindow_ATEXIT_HACK
+Main.obj : error LNK2019: symbole externe non résolu __imp_glutPostRedisplay référencé dans la fonction "void __cdecl timer(int)" (?timer@@YAXH@Z)
+Main.obj : error LNK2019: symbole externe non résolu __imp_glutSwapBuffers référencé dans la fonction "void __cdecl display(void)" (?display@@YAXXZ)
+Main.obj : error LNK2019: symbole externe non résolu __imp_glutDisplayFunc référencé dans la fonction main
+Main.obj : error LNK2019: symbole externe non résolu __imp_glutReshapeFunc référencé dans la fonction main
+Main.obj : error LNK2019: symbole externe non résolu __imp_glutKeyboardFunc référencé dans la fonction main
+Main.obj : error LNK2019: symbole externe non résolu __imp_glutTimerFunc référencé dans la fonction "void __cdecl timer(int)" (?timer@@YAXH@Z)
+Main.obj : error LNK2019: symbole externe non résolu __imp_glutSpecialFunc référencé dans la fonction main
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\ProjetAvion\Lib\glut32.ms.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\ProjetAvion\Lib\glu32.ms.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\ProjetAvion\Lib\opengl32.ms.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\ProjetAvion\Lib\glut32.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
+C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\ProjetAvion\Projet\x64\Debug\ProjetAvion.exe : fatal error LNK1120: 14 externes non résolus
