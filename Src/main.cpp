@@ -367,6 +367,9 @@ void init() {
         textureFuselage = loadBMP("Resources/metal.bmp");
         if (textureFuselage == 0) {
             textureFuselage = loadBMP("../Resources/metal.bmp");
+            if (textureFuselage == 0) {
+                textureFuselage = loadBMP("../../Resources/metal.bmp");
+            }
         }
     }
     std::cout << "ID texture fuselage = " << textureFuselage << std::endl;
@@ -378,6 +381,9 @@ void init() {
         textureSky = loadBMP("Resources/sky.bmp");
         if (textureSky == 0) {
             textureSky = loadBMP("../Resources/sky.bmp");
+            if (textureSky == 0) {
+                textureSky = loadBMP("../../Resources/sky.bmp");
+            }
         }
     }
     std::cout << "ID texture sky = " << textureSky << std::endl;

@@ -71,12 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>C:\Users\mypc\Desktop\IG\ProjetAvion\Bin\</OutDir>
-    <IntDir>C:\Users\mypc\Desktop\IG\ProjetAvion\Temp\</IntDir>
+    <OutDir>..\..\Bin\</OutDir>
+    <IntDir>..\..\Temp\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>C:\Users\mypc\Desktop\IG\ProjetAvion\Bin\</OutDir>
-    <IntDir>C:\Users\mypc\Desktop\IG\ProjetAvion\Temp\</IntDir>
+    <OutDir>..\..\Bin\</OutDir>
+    <IntDir>..\..\Temp\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -84,7 +84,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\mypc\Desktop\IG\ProjetAvion\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -92,7 +92,7 @@
       <AdditionalDependencies>glut32.ms.lib
 ;glu32.ms.lib
 ;opengl32.ms.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\mypc\Desktop\IG\ProjetAvion\Lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -103,12 +103,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\mypc\Desktop\IG\ProjetAvion\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\mypc\Desktop\IG\ProjetAvion\Lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glut32.ms.lib
 ;glu32.ms.lib
 ;opengl32.ms.lib</AdditionalDependencies>
@@ -120,12 +120,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\ProjetAvion\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\islam\OneDrive\Bureau\Master_isl\S2\IG\ProjetAvion\Lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
       <AdditionalDependencies>glut32.ms.lib;glu32.ms.lib;opengl32.ms.lib;%(AdditionalDependencies)</AdditionalDependencies>
