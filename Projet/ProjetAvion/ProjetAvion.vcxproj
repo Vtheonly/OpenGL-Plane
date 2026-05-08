@@ -154,7 +154,7 @@
     <ClCompile Include="..\..\Src\Engine\Camera.cpp" />
     <ClCompile Include="..\..\Src\Entities\Obstacle.cpp" />
     <ClCompile Include="..\..\Src\Entities\Player.cpp" />
-    <ClCompile Include="..\..\Src\Main.cpp" />
+    <ClCompile Include="..\..\Src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\..\Lib\glut32.ms.lib" />

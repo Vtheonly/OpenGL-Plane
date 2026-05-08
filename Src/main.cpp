@@ -1,15 +1,11 @@
 #define _CRT_SECURE_NO_WARNINGS
-#define GLUT_DISABLE_ATEXIT_HACK
-#define GLUT_BUILDING_LIB
-
+#include <GL/glut.h>
 #include <windows.h>
 #include <stdlib.h>
-#include <cstdlib>
 #include <vector>
 #include <string>
 #include <iostream>
 #include <cmath>
-#include <GL/glut.h>
 #include "Entities/Player.h"
 #include "Entities/Obstacle.h"
 #include "Engine/Camera.h"
