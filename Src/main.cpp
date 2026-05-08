@@ -10,18 +10,14 @@
 #include "Entities/Player.h"
 #include "Entities/Obstacle.h"
 #include "Engine/Camera.h"
-/* #if defined(WIN32) || defined(WIN64)
-#define _CRTDBG_MAP_ALLOC
-#if defined(_DEBUG)
-#define _AFXDLL
-#include <afx.h>
-#endif
-#endif
-#include <stdlib.h>
-#if defined(WIN32) || defined(WIN64)
-#include <crtdbg.h>
-#endif
-*/
+
+// --- STRUCTURE DE LA VILLE ---
+struct Building {
+    float x, z;
+    float width, height, depth;
+    float r, g, b; // Couleur
+};
+std::vector<Building> city; // Liste des gratte-ciels
 
 Player avion;
 Camera camera;
@@ -315,6 +311,25 @@ GLuint loadBMP(const char* filename) {
     return textureID;
 }
 
+// NOUVEAU: Initialisation de la ville procédurale
+void initCity() {
+    for (int i = 0; i < 200; i++) {
+        Building b;
+        b.x = (rand() % 400) - 200.0f; // Étalé entre -200 et 200 en largeur
+        b.z = (rand() % 400) - 350.0f; // Étalé entre -350 et 50 en profondeur
+        b.width = 4.0f + (rand() % 6);
+        b.depth = 4.0f + (rand() % 6);
+        b.height = 15.0f + (rand() % 20); // Hauteur max 35. Base à -50 => Top à -15 (Avion bloqué à -10)
+        
+        // Couleurs aléatoires (Nuances de gris, bleu gris, verre)
+        b.r = 0.2f + (rand() % 20) / 100.0f;
+        b.g = 0.2f + (rand() % 20) / 100.0f;
+        b.b = 0.3f + (rand() % 30) / 100.0f;
+        
+        city.push_back(b);
+    }
+}
+
 void init() {
     glClearColor(0.05f, 0.05f, 0.1f, 1.0f);
 
@@ -341,6 +356,9 @@ void init() {
     glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, mat_shininess);
 
     setupSunLight();
+
+    // On génère la ville
+    initCity();
 
     // rami
     // Texture du fuselage avec les chemins absolus (et chemin relatif de secours)
@@ -415,6 +433,46 @@ void drawSkySphere() {
     glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
 
     glPopMatrix();
+}
+
+// NOUVEAU: Fonction pour dessiner la ville
+void drawCity() {
+    // 1. Le sol (Pour cacher le vide sous les bâtiments)
+    glPushMatrix();
+    glTranslatef(0.0f, -50.0f, -100.0f);
+    glScalef(800.0f, 1.0f, 800.0f);
+    glColor3f(0.1f, 0.1f, 0.1f); // Sol sombre
+    if (lightOn) {
+        GLfloat mat_ambient[] = { 0.05f, 0.05f, 0.05f, 1.0f };
+        GLfloat mat_diffuse[] = { 0.1f, 0.1f, 0.1f, 1.0f };
+        glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambient);
+        glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_diffuse);
+    }
+    glutSolidCube(1.0f);
+    glPopMatrix();
+
+    // 2. Les gratte-ciels
+    for (const auto& b : city) {
+        glPushMatrix();
+        
+        // La base du cube est au centre. Si on veut que la base repose sur Y=-50, 
+        // on place le centre à -50 + hauteur/2
+        glTranslatef(b.x, -50.0f + (b.height / 2.0f), b.z);
+        
+        glColor3f(b.r, b.g, b.b);
+        if (lightOn) {
+            GLfloat mat_diffuse[] = { b.r, b.g, b.b, 1.0f };
+            GLfloat mat_specular[] = { 0.3f, 0.3f, 0.3f, 1.0f }; // Légère réflexion (verre)
+            glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_diffuse);
+            glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
+            glMaterialf(GL_FRONT, GL_SHININESS, 10.0f);
+        }
+        
+        glScalef(b.width, b.height, b.depth);
+        glutSolidCube(1.0f);
+        
+        glPopMatrix();
+    }
 }
 
 // NOUVEAU: Fonction pour dessiner la minimap Radar (en haut à droite)
@@ -578,6 +636,8 @@ void display() {
     setupSunLight();
     setupPlaneHeadlight();
 
+    // Dessiner la ville en contrebas
+    drawCity();
 
     avion.draw();
 
@@ -642,6 +702,16 @@ void timer(int v) {
         }
 
         avion.update(1.0f);
+        
+        // --- MISE À JOUR DE LA VILLE INFINIE ---
+        for (auto& b : city) {
+            b.z += avion.getSpeed() * 3.0f; // Les bâtiments défilent à la même vitesse
+            if (b.z > 20.0f) { // S'ils dépassent la caméra, on les replace au fond
+                b.z -= 400.0f; 
+                b.x = (rand() % 400) - 200.0f; // Nouvelle position X aléatoire
+                b.height = 15.0f + (rand() % 20); // Nouvelle hauteur
+            }
+        }
         
         for (auto& o : listeCercles) {
             // Vitesse des anneaux calquée sur celle de l'avion
@@ -713,8 +783,8 @@ void keyboard(unsigned char key, int x, int y) {
         break;
 
         // 5. MODE FIL DE FER vs PLEIN 
-    case 'w':
-    case 'W':
+    case 'f':
+    case 'F':
         wireframe = !wireframe;
         if (wireframe)
             glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); // Mode fil de fer
