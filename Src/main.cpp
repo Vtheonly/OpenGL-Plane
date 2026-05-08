@@ -1,6 +1,7 @@
 #define GLUT_DISABLE_ATEXIT_HACK
 #define GLUT_BUILDING_LIB
 
+#include <stdlib.h>
 #include <cstdlib>
 #include <vector>
 #include <string>
@@ -362,13 +363,13 @@ void init() {
 
     // rami
     // Texture du fuselage avec les chemins absolus (et chemin relatif de secours)
-    textureFuselage = loadBMP("/home/mersel/Documents/Projects/ProjetAvion (4)/ProjetAvion/Resources/metal.bmp");
+    textureFuselage = loadBMP("/home/mersel/Documents/Projects/ProjetAvion (4)/ProjetAvion/Src/Resources/metal.bmp");
     if (textureFuselage == 0) {
-        textureFuselage = loadBMP("Resources/metal.bmp");
+        textureFuselage = loadBMP("Src/Resources/metal.bmp");
         if (textureFuselage == 0) {
-            textureFuselage = loadBMP("../Resources/metal.bmp");
+            textureFuselage = loadBMP("../Src/Resources/metal.bmp");
             if (textureFuselage == 0) {
-                textureFuselage = loadBMP("../../Resources/metal.bmp");
+                textureFuselage = loadBMP("../../Src/Resources/metal.bmp");
             }
         }
     }
@@ -376,13 +377,13 @@ void init() {
     avion.setFuselageTexture(textureFuselage);
 
     // Texture du ciel avec les chemins absolus (et chemin relatif de secours)
-    textureSky = loadBMP("/home/mersel/Documents/Projects/ProjetAvion (4)/ProjetAvion/Resources/sky.bmp");
+    textureSky = loadBMP("/home/mersel/Documents/Projects/ProjetAvion (4)/ProjetAvion/Src/Resources/sky.bmp");
     if (textureSky == 0) {
-        textureSky = loadBMP("Resources/sky.bmp");
+        textureSky = loadBMP("Src/Resources/sky.bmp");
         if (textureSky == 0) {
-            textureSky = loadBMP("../Resources/sky.bmp");
+            textureSky = loadBMP("../Src/Resources/sky.bmp");
             if (textureSky == 0) {
-                textureSky = loadBMP("../../Resources/sky.bmp");
+                textureSky = loadBMP("../../Src/Resources/sky.bmp");
             }
         }
     }
