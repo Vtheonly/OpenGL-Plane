@@ -1,6 +1,8 @@
+#define _CRT_SECURE_NO_WARNINGS
 #define GLUT_DISABLE_ATEXIT_HACK
 #define GLUT_BUILDING_LIB
 
+#include <windows.h>
 #include <stdlib.h>
 #include <cstdlib>
 #include <vector>
