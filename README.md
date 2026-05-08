@@ -1,4 +1,4 @@
-# 🛩️ ProjetAvion: The Ultimate OpenGL 3D Flight Simulator
+# ProjetAvion: The Ultimate OpenGL 3D Flight Simulator
 
 ![ProjetAvion Banner](https://img.shields.io/badge/Status-Active-success) ![OpenGL](https://img.shields.io/badge/OpenGL-3D_Graphics-blue) ![C++](https://img.shields.io/badge/C++-14%2F17-orange) ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey)
 
@@ -6,38 +6,38 @@ Welcome to **ProjetAvion**, an immersive, high-performance 3D flight simulator b
 
 ---
 
-## 🌟 Massive Feature Set
+## Massive Feature Set
 
 ProjetAvion boasts an extensive array of features designed to provide a visually stunning and mechanically deep flight experience:
 
-### 🏙️ Procedural Infinite Cityscape
+### Procedural Infinite Cityscape
 Dive deep below the clouds and fly over a sprawling, procedurally generated metropolis!
 - **Endless Horizon:** Thousands of skyscrapers are generated on the fly, seamlessly looping to create an infinite sense of speed and scale.
 - **Dynamic Lighting:** Buildings react to the time of day, gleaming under the bright afternoon sun and shimmering beneath the glow of your plane's headlights at night.
 - **Safe Ceiling:** The flight ceiling and floor are mathematically clamped, ensuring you skim the rooftops at breathtaking speeds without colliding into the ground.
 
-### 🤖 Intelligent Autopilot (Pathfinder AI)
+### Intelligent Autopilot (Pathfinder AI)
 Feeling lazy or need help navigating the challenging ring courses? Press a button to hand over control to the onboard AI!
 - **Target Acquisition:** The AI automatically scans for the nearest active ring objective in 3D space.
 - **Smooth Interpolation:** Calculates the optimal yaw, pitch, and roll to smoothly intercept the target.
 - **Real-Time Corrections:** Adjusts dynamically if the plane is thrown off course.
 
-### 💨 Nitro Boost & Flight Dynamics
+### Nitro Boost & Flight Dynamics
 - **Arcade Physics:** A balanced mix of realistic gravity and arcade-style maneuverability.
 - **Nitro System:** Engage the afterburners for a massive burst of speed. The nitro system dynamically increases your Field of View (FOV) for an intense warp-speed effect, accompanied by custom particle/fire exhaust trails.
 - **Throttle Control:** Micro-manage your speed with responsive throttle up/down mechanics, perfect for tight maneuvers.
 
-### 🛰️ Tactical Minimap (HUD Radar)
+### Tactical Minimap (HUD Radar)
 A fully functional 2D overlay radar maps the 3D world into a top-down tactical view.
 - **Spatial Awareness:** Displays your plane in the center, tracking relative positions of upcoming rings and objectives.
 - **Altitude Indicators:** HUD markers dynamically change shape (triangles pointing up/down or squares) to indicate if objectives are above, below, or at your exact altitude.
 
-### 🌆 Dynamic Day/Night Cycle & Illumination
+### Dynamic Day/Night Cycle & Illumination
 - **Time of Day:** Switch between brilliant daylight and deep night modes instantly.
 - **Custom Lighting Models:** Features ambient moonlight, blinding sun reflections, and a custom forward-facing spotlight (Headlight) attached to the nose of the plane that cuts through the darkness.
 - **Blinking Beacons:** Real-time flashing navigation lights on the wingtips (Red/Blue) powered by the elapsed internal clock.
 
-### 🎥 Cinematic Camera System
+### Cinematic Camera System
 Experience the flight from multiple perspectives:
 - **Mode 0:** Third-Person Follow Cam (Classic arcade view)
 - **Mode 1:** First-Person Cockpit View (Immersive)
@@ -46,7 +46,7 @@ Experience the flight from multiple perspectives:
 
 ---
 
-## 🎮 Controls & Keybindings
+## Controls & Keybindings
 
 Master the skies with these intuitive keyboard controls:
 
@@ -67,7 +67,7 @@ Master the skies with these intuitive keyboard controls:
 
 ---
 
-## 🛠️ System Requirements & Dependencies
+## System Requirements & Dependencies
 
 To run and compile ProjetAvion, your machine must meet the following requirements:
 
@@ -88,7 +88,7 @@ sudo apt-get install build-essential freeglut3-dev libglew-dev libgl1-mesa-dev l
 
 ---
 
-## 🚀 Build & Execution Instructions
+## Build & Execution Instructions
 
 ProjetAvion is built using standard GNU Make and G++. 
 
@@ -110,7 +110,7 @@ Once compiled successfully, an executable named `ProjetAvion_linux` will be gene
 
 ---
 
-## 📂 Project Architecture
+## Project Architecture
 
 The codebase is cleanly separated into logical directories to separate the physics/game logic from the rendering engine:
 
@@ -135,7 +135,7 @@ ProjetAvion/
 
 ---
 
-## 🌌 Rendering Techniques Used
+## Rendering Techniques Used
 
 ProjetAvion relies on standard legacy OpenGL (Fixed Function Pipeline) augmented with custom mathematical transformations to achieve its aesthetic:
 - **Hierarchical Modeling:** The plane is built using `glPushMatrix()` and `glPopMatrix()` to create complex articulated structures like the spinning propeller.
@@ -146,7 +146,7 @@ ProjetAvion relies on standard legacy OpenGL (Fixed Function Pipeline) augmented
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome! If you want to add new planes, more complex city generation, or multiplayer support, feel free to fork this repository.
 
@@ -158,6 +158,6 @@ Contributions, issues, and feature requests are welcome! If you want to add new 
 
 ---
 
-## 📜 License
+## License
 
-This project is open-source and free to use for educational and entertainment purposes. Happy flying! 🛫
+This project is open-source and free to use for educational and entertainment purposes. Happy flying!
