@@ -362,17 +362,23 @@ void init() {
 
     // rami
     // Texture du fuselage avec les chemins absolus (et chemin relatif de secours)
-    textureFuselage = loadBMP("/home/mersel/Documents/Projects/ProjetAvion (4)/ProjetAvion/Bin/metal.bmp");
+    textureFuselage = loadBMP("/home/mersel/Documents/Projects/ProjetAvion (4)/ProjetAvion/Resources/metal.bmp");
     if (textureFuselage == 0) {
-        textureFuselage = loadBMP("../Bin/metal.bmp");
+        textureFuselage = loadBMP("Resources/metal.bmp");
+        if (textureFuselage == 0) {
+            textureFuselage = loadBMP("../Resources/metal.bmp");
+        }
     }
     std::cout << "ID texture fuselage = " << textureFuselage << std::endl;
     avion.setFuselageTexture(textureFuselage);
 
     // Texture du ciel avec les chemins absolus (et chemin relatif de secours)
-    textureSky = loadBMP("/home/mersel/Documents/Projects/ProjetAvion (4)/ProjetAvion/Bin/sky.bmp");
+    textureSky = loadBMP("/home/mersel/Documents/Projects/ProjetAvion (4)/ProjetAvion/Resources/sky.bmp");
     if (textureSky == 0) {
-        textureSky = loadBMP("../Bin/sky.bmp");
+        textureSky = loadBMP("Resources/sky.bmp");
+        if (textureSky == 0) {
+            textureSky = loadBMP("../Resources/sky.bmp");
+        }
     }
     std::cout << "ID texture sky = " << textureSky << std::endl;
     //
