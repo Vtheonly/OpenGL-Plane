@@ -146,6 +146,63 @@ ProjetAvion relies on standard legacy OpenGL (Fixed Function Pipeline) augmented
 
 ---
 
+---
+
+## Project Submission Details
+
+This section contains all the information required for the project submission as per the evaluation guidelines.
+
+### 1. Group Members
+- **Student Name 1:** [Enter Name] (Email: [Enter Email])
+- **Student Name 2:** [Enter Name] (Email: [Enter Email])
+
+### 2. Work Distribution
+- **[Student Name 1]:** Responsible for [e.g., Physics Engine, Camera System, HUD Design].
+- **[Student Name 2]:** Responsible for [e.g., Procedural City Generation, Texture Mapping, Autopilot AI].
+- **Collaborative Work:** Overall architecture design and debugging.
+
+### 3. Project File Manifest (Zip Contents)
+Below is a commented list of all files included in this project archive:
+- **`Src/main.cpp`:** Main entry point containing the game loop, initialization, and input handling.
+- **`Src/Engine/`:** Contains core engine classes.
+  - `Camera.cpp / .h`: Implementation of the multi-mode camera system.
+- **`Src/Entities/`:** Contains game object classes.
+  - `Player.cpp / .h`: Flight dynamics and 3D plane mesh rendering.
+  - `Cloud.cpp / .h`: Atmospheric cloud object logic.
+  - `Obstacle.cpp / .h`: Scoring rings and collision detection.
+- **`Src/Resources/`:** External assets used by the simulator.
+  - `metal.bmp`: Fuselage texture for the aircraft.
+  - `sky.bmp`: Texture used for the skybox environment.
+- **`Include/`:** Header dependencies for OpenGL (GL, GLU, GLUT, GLEW).
+- **`Lib/`:** Pre-compiled library files for cross-platform compatibility.
+- **`ProjetAvion_linux`:** The compiled executable for Linux systems.
+- **`README.md`:** This documentation file.
+
+### 4. Developed Classes Documentation
+A detailed look at the custom classes developed for this project:
+- **`Player Class`**: Manages the aircraft's state (position, rotation, velocity). Handles hierarchical modeling for the propeller and wing animations.
+- **`Camera Class`**: Implements 4 distinct viewing modes and handles smooth Field of View (FOV) transitions during nitro boosts.
+- **`Obstacle Class`**: Represents the target rings. Includes logic for distance-based shape changing on the radar and collision verification.
+- **`Cloud Class`**: Simple entity for background environmental detail.
+
+### 5. Project Subject & Description
+**ProjetAvion** is a high-performance 3D flight simulator developed in C++ and OpenGL. The objective was to create a functional flight engine that supports infinite terrain generation, complex object collision, and a semi-autonomous autopilot system.
+
+### 6. User Documentation (How to Use)
+- **Controls**: See the [Controls & Keybindings](#controls--keybindings) section above.
+- **Build**: Follow the instructions in [Build & Execution](#build--execution-instructions).
+- **Navigation**: Use the Radar HUD to locate objectives (Rings) and fly through them to increase your score.
+
+### 7. Technical Implementation Comments
+- **Hierarchical Modeling**: The plane is built using a stack-based approach (`glPushMatrix/glPopMatrix`) to ensure the propeller rotates relative to the fuselage.
+- **Physics**: Implements a custom drag and lift model to simulate flight physics, coupled with a nitro system that scales both velocity and FOV.
+- **Optimization**: The city generation uses a procedural looping algorithm to maintain high performance without loading thousands of unique assets.
+
+> [!IMPORTANT]
+> **Acknowledgment of Receipt:** An acknowledgment of receipt will be sent via email to the addresses provided in Section 1 once the archive has been retrieved and extracted. If any issues are encountered during extraction or execution, you will be notified at these same addresses.
+
+---
+
 ## Contributing
 
 Contributions, issues, and feature requests are welcome! If you want to add new planes, more complex city generation, or multiplayer support, feel free to fork this repository.

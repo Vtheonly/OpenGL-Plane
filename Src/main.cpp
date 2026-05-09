@@ -1,7 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <GL/glut.h>
+#define GLUT_DISABLE_ATEXIT_HACK
+
 #include <windows.h>
 #include <stdlib.h>
+#include <GL/glut.h>
 #include <vector>
 #include <string>
 #include <iostream>
